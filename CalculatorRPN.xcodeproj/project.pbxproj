@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B05F6E891E5CBE9600949E17 /* CalculatorEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F6E881E5CBE9600949E17 /* CalculatorEngine.swift */; };
+		B0C881E01E5F890A00C1F529 /* TapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C881DF1E5F890A00C1F529 /* TapeViewController.swift */; };
 		B0EEB1561E5CA6F7004745DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EEB1551E5CA6F7004745DC /* AppDelegate.swift */; };
 		B0EEB1581E5CA6F7004745DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EEB1571E5CA6F7004745DC /* ViewController.swift */; };
 		B0EEB15B1E5CA6F7004745DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB1591E5CA6F7004745DC /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B05F6E881E5CBE9600949E17 /* CalculatorEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorEngine.swift; sourceTree = "<group>"; };
+		B0C881DF1E5F890A00C1F529 /* TapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapeViewController.swift; sourceTree = "<group>"; };
 		B0EEB1521E5CA6F7004745DC /* CalculatorRPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorRPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0EEB1551E5CA6F7004745DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0EEB1571E5CA6F7004745DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				B0EEB1551E5CA6F7004745DC /* AppDelegate.swift */,
+				B0C881DF1E5F890A00C1F529 /* TapeViewController.swift */,
 				B0EEB1571E5CA6F7004745DC /* ViewController.swift */,
 				B0EEB1591E5CA6F7004745DC /* Main.storyboard */,
 				B0EEB15C1E5CA6F7004745DC /* Assets.xcassets */,
 				B0EEB15E1E5CA6F7004745DC /* LaunchScreen.storyboard */,
 				B0EEB1611E5CA6F7004745DC /* Info.plist */,
+				B05F6E881E5CBE9600949E17 /* CalculatorEngine.swift */,
 			);
 			path = CalculatorRPN;
 			sourceTree = "<group>";
@@ -91,11 +97,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Adrijus Zelinskis";
 				TargetAttributes = {
 					B0EEB1511E5CA6F7004745DC = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ARG8RHYTAS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C881E01E5F890A00C1F529 /* TapeViewController.swift in Sources */,
 				B0EEB1581E5CA6F7004745DC /* ViewController.swift in Sources */,
 				B0EEB1561E5CA6F7004745DC /* AppDelegate.swift in Sources */,
+				B05F6E891E5CBE9600949E17 /* CalculatorEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +190,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +241,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -260,7 +271,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ARG8RHYTAS;
 				INFOPLIST_FILE = CalculatorRPN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CalculatorRPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +285,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ARG8RHYTAS;
 				INFOPLIST_FILE = CalculatorRPN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CalculatorRPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +314,7 @@
 				B0EEB1661E5CA6F7004745DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
